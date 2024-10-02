@@ -1,3 +1,4 @@
+import { MembroCreditos } from "./membro-creditos.model";
 import { VideoFilme } from "./video-filme.model";
 
 export interface DetalhesFilme {
@@ -12,6 +13,8 @@ export interface DetalhesFilme {
   generos: string;
 
   videos: VideoFilme[];
+
+  elencoPrincipal: MembroCreditos[];
 }
 
 
