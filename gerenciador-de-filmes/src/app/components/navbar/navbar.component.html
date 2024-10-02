@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg app-background-principal sticky-top">
+  <div class="container-fluid">
+
+      <a class="navbar-brand fw-semibold">APMDb</a>
+
+      <button (click)="colapsarNavbar = !colapsarNavbar" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" [ngClass]=" {show: colapsarNavbar} ">
+          <div class="navbar-nav ms-auto">
+              <a *ngFor="let link of linksNavbar" class="nav-link active" aria-current="page" [href]="link.href">{{ link.texto }}</a>
+          </div>
+      </div>
+  </div>
+</nav>

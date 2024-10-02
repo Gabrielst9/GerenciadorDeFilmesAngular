@@ -1,0 +1,10 @@
+@import "bootstrap";
+@import "bootstrap-icons";
+
+$cor-principal: #8504ee;
+$cor-secundaria: #300652;
+
+.app-background-principal {
+  background-color: $cor-principal;
+}
+
